@@ -31,6 +31,6 @@ sequence:
               media_content_id: media-source://media_source/local/svalbard/noises/turret
           browse_entity_id: media_player.dining_room
     target: 
-      entity_id: media_player.esp32_s3_box_3_2e03b4_goblin
+      entity_id: media_player.esp32_s3_box_3_055950_gizmo
 mode: single
 icon: mdi:pistol
