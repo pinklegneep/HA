@@ -1,0 +1,36 @@
+alias: turret-dining-activated
+sequence:
+  - action: media_player.play_media
+    metadata: {}
+    data:
+      media:
+        media_content_id: >-
+          media-source://media_source/local/svalbard/noises/turret/{{
+          ("Turret_turret_active_1.wav",
+           "Turret_turret_active_2.wav",
+           "Turret_turret_active_4.wav",
+           "Turret_turret_active_5.wav",
+           "Turret_turret_active_6.wav",
+           "Turret_turret_active_7.wav",
+           "Turret_turret_active_8.wav") | random }}
+        media_content_type: audio/x-wav
+        metadata:
+          title: Turret_die.wav
+          thumbnail: null
+          media_class: music
+          children_media_class: null
+          navigateIds:
+            - {}
+            - media_content_type: app
+              media_content_id: media-source://media_source
+            - media_content_type: ''
+              media_content_id: media-source://media_source/local/svalbard
+            - media_content_type: ''
+              media_content_id: media-source://media_source/local/svalbard/noises
+            - media_content_type: ''
+              media_content_id: media-source://media_source/local/svalbard/noises/turret
+          browse_entity_id: media_player.dining_room
+    target: 
+      entity_id: media_player.esp32_s3_box_3_2e03b4_goblin
+mode: single
+icon: mdi:pistol
