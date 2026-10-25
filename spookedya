@@ -1,0 +1,81 @@
+alias: spookedya
+sequence:
+  - if:
+      - condition: time
+        after: '00:00:00'
+    then:
+      - action: media_player.play_media
+        data:
+          media:
+            media_content_id: >-
+              media-source://media_source/local/svalbard/noises/Spooky/{{
+              ("alex_jauk-ghostly-laughing-147610.mp3",
+               "ChainsRattling.mp3","CreakingDoor.mp3",
+               "fadingembersaudio-spooky-cartoon-ghost-wooo-430234.mp3",
+               "freesound_community-classic-ghost-sound-95773.mp3",
+               "goodsoupdisciple-witch-cackle-250272.mp3",
+               "imagne_impossible-horror-scary-human-whisper-ghost-05-257014.mp3",
+               "kalsstockmedia-scary-spooky-sound-of-a-ghost-283843.mp3",
+               "Monster.mp3",
+               "nikin-a-spooky-ghost-voice-in-the-dark-182097.mp3",
+               "u_5hx6qi66bg-strange-whispers-415245.mp3",
+               "wolfs.mp3",
+               "creaking-door.mp3",
+               "steps-of-doom.mp3",
+               "witch-cackle.mp3",
+               "dragon-studio-spooky-scary-sound-410563.mp3",
+               "dragon-studio-ghostly-wail-504036.mp3",
+               "squarefrog-ominous-background-sounds-399146.mp3",
+               "dragon-studio-halloween-ghost-whisper-410557.mp3",
+               "mollyroselee-supernatural-growling-513256.mp3",
+               "dragon-studio-creepy-whisper-472369.mp3",
+               "dragon-studio-ghostly-wail-504036.mp3",
+               "wolf-howl.mp3") | random }}
+            media_content_type: audio/x-mp3
+            metadata: {}
+          metadata:
+            title: spookedya
+            media_class: music
+            navigateIds:
+              - {}
+              - media_content_type: app
+                media_content_id: media-source://media_source
+              - media_content_type: ''
+                media_content_id: media-source://media_source/local/svalbard
+              - media_content_type: ''
+                media_content_id: media-source://media_source/local/svalbard/noises
+              - media_content_type: ''
+                media_content_id: media-source://media_source/local/svalbard/noises/Spooky
+            browse_entity_id: media_player.nobedroom
+        target:
+          entity_id: media_player.nobedroom
+    else:
+      - action: media_player.play_media
+        data:
+          media:
+            media_content_id: >-
+              media-source://media_source/local/svalbard/noises/Spooky/{{
+              ("alex_jauk-ghostly-laughing-147610.mp3","ChainsRattling.mp3","CreakingDoor.mp3","fadingembersaudio-spooky-cartoon-ghost-wooo-430234.mp3","freesound_community-classic-ghost-sound-95773.mp3","goodsoupdisciple-witch-cackle-250272.mp3","imagne_impossible-horror-scary-human-whisper-ghost-05-257014.mp3","kalsstockmedia-scary-spooky-sound-of-a-ghost-283843.mp3","Monster.mp3","nikin-a-spooky-ghost-voice-in-the-dark-182097.mp3","u_5hx6qi66bg-strange-whispers-415245.mp3","wolfs.mp3",
+              "creaking-door.mp3", "steps-of-doom.mp3",
+              "witch-cackle.mp3","wolf-howl.mp3") | random }}
+            media_content_type: audio/x-mp3
+            metadata: {}
+          metadata:
+            title: spookedya
+            media_class: music
+            navigateIds:
+              - {}
+              - media_content_type: app
+                media_content_id: media-source://media_source
+              - media_content_type: ''
+                media_content_id: media-source://media_source/local/svalbard
+              - media_content_type: ''
+                media_content_id: media-source://media_source/local/svalbard/noises
+              - media_content_type: ''
+                media_content_id: media-source://media_source/local/svalbard/noises/Spooky
+            browse_entity_id: media_player.thehouse
+        target:
+          entity_id: media_player.nobedroom
+mode: single
+icon: mdi:ghost
+
